@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10172a">
+    <title>Weather &amp; Movies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">W</span> Weather &amp; Movies</a>
+            <div class="nav-links">
+                <a class="nav-link" href="index.html" aria-current="page">Home</a>
+                <a class="nav-link" href="weather.html">Weather</a>
+                <a class="nav-link" href="movies.html">Movies</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <span class="eyebrow">Weather and movies</span>
+            <h1>What’s the weather? <span class="gradient-text">What should we watch?</span></h1>
+            <p class="hero-copy">Check the forecast or look up a movie. It’s all here.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="weather.html">Check the forecast <span aria-hidden="true">→</span></a>
+                <a class="button button-secondary" href="movies.html">Search movies <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="feature-grid" aria-label="Explore">
+            <a class="feature-card weather-feature" href="weather.html">
+                <span class="feature-icon" aria-hidden="true">☀</span>
+                <span class="feature-label">Weather</span>
+                <h2>Check your forecast.</h2>
+                <p>Search a city to see the current conditions.</p>
+                <span class="feature-link">Check the weather <span aria-hidden="true">→</span></span>
+            </a>
+            <a class="feature-card movies-feature" href="movies.html">
+                <span class="feature-icon" aria-hidden="true">▶</span>
+                <span class="feature-label">Movies</span>
+                <h2>Looking for something to watch?</h2>
+                <p>Search a movie to see its story, poster, and cast.</p>
+                <span class="feature-link">Search for a movie <span aria-hidden="true">→</span></span>
+            </a>
+        </section>
+    </main>
+    <footer class="site-footer">Weather and movie information, all in one place.</footer>
+</body>
+</html>

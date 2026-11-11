@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10172a">
+    <title>Weather | Weather &amp; Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">W</span> Weather &amp; Movies</a>
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="weather.html" aria-current="page">Weather</a>
+                <a class="nav-link" href="movies.html">Movies</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="page-heading">
+            <span class="eyebrow">Local forecast</span>
+            <h1>Weather in <span class="gradient-text">your city.</span></h1>
+            <p>Enter a city to see the current conditions.</p>
+        </section>
+
+        <form class="search-form" id="weatherSearchForm">
+            <label class="sr-only" for="tmc">City name</label>
+            <input id="tmc" name="city" type="search" placeholder="Enter a city name" autocomplete="off" required>
+            <button class="button button-primary" id="submitbtn" type="submit">Search <span aria-hidden="true">→</span></button>
+        </form>
+
+        <section class="weather-results" id="mkc" aria-live="polite" aria-busy="false">
+            <div class="empty-state">
+                <span class="empty-icon" aria-hidden="true">☼</span>
+                <p>Search for a city to see the forecast.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">Weather and movie information, all in one place.</footer>
+</body>
+</html>

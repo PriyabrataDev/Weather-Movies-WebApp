@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10172a">
+    <title>Movie Search | Weather &amp; Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="movies.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">W</span> Weather &amp; Movies</a>
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="weather.html">Weather</a>
+                <a class="nav-link" href="movies.html" aria-current="page">Movies</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="page-heading">
+            <span class="eyebrow">Movie search</span>
+            <h1>Looking for a <span class="gradient-text">movie?</span></h1>
+            <p>Search by title to see the poster, story, and cast.</p>
+        </section>
+
+        <form class="search-form" id="movieSearchForm">
+            <label class="sr-only" for="userinput">Movie title</label>
+            <input id="userinput" name="movie" type="search" placeholder="Enter a movie title" autocomplete="off" required>
+            <button class="button button-primary" id="submitBtn" type="submit">Search <span aria-hidden="true">→</span></button>
+        </form>
+
+        <section class="result-panel" id="mkc" aria-live="polite" aria-busy="false">
+            <div class="empty-state">
+                <span class="empty-icon" aria-hidden="true">✦</span>
+                <p>Type in a movie title to get started.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">Weather and movie information, all in one place.</footer>
+</body>
+</html>
